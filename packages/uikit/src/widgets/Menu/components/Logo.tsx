@@ -43,23 +43,20 @@ const StyledLink = styled("a")`
 
 const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
   const { linkComponent } = useContext(MenuContext);
-  const isAbsoluteUrl = href.startsWith("http");
+  const isAbsoluteUrl = href.startsWith("https");
   const innerLogo = (
-    <>
-      <LogoIcon className="mobile-icon" />
-      <LogoWithTextIcon className="desktop-icon" />
-    </>
+<image width="205" height="26" href='https://i.ibb.co/Hg2hktN/nav-title-light.png'/>
   );
 
   return (
     <Flex alignItems="center">
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="Mars Swap home page">
-          <image width="205" height="26" href="https://i.ibb.co/Hg2hktN/nav-title-light.png"/>
+          {innerLogo}
         </StyledLink>
       ) : (
         <StyledLink href={href} as={linkComponent} aria-label="Mars Swap home page">
-          <image width="205" height="26" href="https://i.ibb.co/Hg2hktN/nav-title-light.png"/>
+          {innerLogo}
         </StyledLink>
       )}
     </Flex>

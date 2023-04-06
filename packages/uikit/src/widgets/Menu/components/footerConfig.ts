@@ -3,32 +3,20 @@ import { FooterLinkType } from "../../../components/Footer/types";
 
 export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
   {
-    label: t("About"),
+    label: t("About Mars Swap"),
     items: [
       {
         label: t("Contact"),
-        href: "https://docs.pancakeswap.finance/contact-us",
+        href: "https://mars-frontend-web.vercel.app/",
         isHighlighted: true,
       },
       {
         label: t("Brand"),
-        href: "https://docs.pancakeswap.finance/brand",
-      },
-      {
-        label: t("Blog"),
-        href: "https://blog.pancakeswap.finance/",
+        href: "https://mars-frontend-web.vercel.app/",
       },
       {
         label: t("Community"),
-        href: "https://docs.pancakeswap.finance/contact-us/telegram",
-      },
-      {
-        label: t("Litepaper"),
-        href: "https://v2litepaper.pancakeswap.finance/",
-      },
-      {
-        label: t("Terms Of Service"),
-        href: "https://pancakeswap.finance/terms-of-service",
+        href: "https://mars-frontend-web.vercel.app/",
       },
     ],
   },
@@ -37,15 +25,15 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
     items: [
       {
         label: t("Customer Support"),
-        href: "https://docs.pancakeswap.finance/contact-us/customer-support",
+        href: "https://mars-frontend-web.vercel.app/",
       },
       {
         label: t("Troubleshooting"),
-        href: "https://docs.pancakeswap.finance/help/troubleshooting",
+        href: "https://mars-frontend-web.vercel.app/",
       },
       {
         label: t("Guides"),
-        href: "https://docs.pancakeswap.finance/get-started",
+        href: "https://mars-frontend-web.vercel.app/",
       },
     ],
   },
@@ -54,23 +42,15 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
     items: [
       {
         label: "Github",
-        href: "https://github.com/pancakeswap",
+        href: "https://mars-frontend-web.vercel.app/",
       },
       {
         label: t("Documentation"),
-        href: "https://docs.pancakeswap.finance",
-      },
-      {
-        label: t("Bug Bounty"),
-        href: "https://docs.pancakeswap.finance/code/bug-bounty",
+        href: "https://mars-frontend-web.vercel.app/",
       },
       {
         label: t("Audits"),
-        href: "https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited",
-      },
-      {
-        label: t("Careers"),
-        href: "https://docs.pancakeswap.finance/hiring/become-a-chef",
+        href: "https://mars-frontend-web.vercel.app/",
       },
     ],
   },
