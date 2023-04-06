@@ -98,8 +98,8 @@ const defaultProps = {
     </>
   ),
   activeItem: "/swap",
-  activeSubItem: "https://exchange.pancakeswap.finance",
-  buyCakeLabel: "Buy CAKE",
+  activeSubItem: "https://mars-frontend-web.vercel.app/swap",
+  buyCakeLabel: "Buy Mars1",
 };
 
 const ConnectedTemplate: React.FC<React.PropsWithChildren<NavProps>> = (args) => {
@@ -202,8 +202,8 @@ export const NotConnected: React.FC<React.PropsWithChildren> = () => {
         subLinks={links[0].items as SubMenuItemsType[]}
         footerLinks={footerLinks}
         activeItem="/swap"
-        activeSubItem="https://exchange.pancakeswap.finance"
-        buyCakeLabel="Buy CAKE"
+        activeSubItem="https://mars-frontend-web.vercel.app/swap"
+        buyCakeLabel="Buy Mars1"
       >
         <div>
           <h1>Page body</h1>
@@ -235,8 +235,8 @@ export const WithoutConnectButton: React.FC<React.PropsWithChildren> = () => {
         footerLinks={footerLinks}
         subLinks={links[0].items as SubMenuItemsType[]}
         activeItem="/swap"
-        activeSubItem="https://exchange.pancakeswap.finance"
-        buyCakeLabel="Buy CAKE"
+        activeSubItem="https://mars-frontend-web.vercel.app/swap"
+        buyCakeLabel="Buy Mars1"
       >
         <div>
           <h1>No connect button on top</h1>
@@ -261,8 +261,8 @@ export const WithSubmenuSelected: React.FC<React.PropsWithChildren> = () => {
         subLinks={links[0].items as SubMenuItemsType[]}
         footerLinks={footerLinks}
         activeItem="/swap"
-        activeSubItem="https://exchange.pancakeswap.finance"
-        buyCakeLabel="Buy CAKE"
+        activeSubItem="https://mars-frontend-web.vercel.app/swap"
+        buyCakeLabel="Buy Mars1"
       >
         <div>
           <Heading as="h1" mb="8px">
