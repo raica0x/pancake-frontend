@@ -104,7 +104,7 @@ const Footer = () => {
       )}
       <Wrapper>
         <Heading mb="24px" scale="xl" color="white">
-          {t('Start in seconds.')}
+          {t('Start in a flash.')}
         </Heading>
         <Text textAlign="center" color="white">
           {t('Connect your wallet and start using right away.')}
@@ -113,7 +113,7 @@ const Footer = () => {
           {t('No registration needed.')}
         </Text>
 
-        <Link external href="#">
+        <Link external href="https://mars-frontend-web.vercel.app/">
           {t('Learn how to start')}
           <OpenNewIcon color="primary" ml="4px" />
         </Link>
