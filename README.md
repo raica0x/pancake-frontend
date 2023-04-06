@@ -1,4 +1,4 @@
-# 🥞 Pancake Frontend
+# 🥞 Mars Swap Frontend
 
 <p align="center">
   <a href="https://pancakeswap.finance">
@@ -6,7 +6,7 @@
   </a>
 </p>
 
-This project contains the main features of the pancake application.
+This project contains the main features of the Mars Swap application and its features.
 
 If you want to contribute, please refer to the [contributing guidelines](./CONTRIBUTING.md) of this project.
 
