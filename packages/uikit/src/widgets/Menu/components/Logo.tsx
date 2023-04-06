@@ -54,10 +54,12 @@ const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
   return (
     <Flex alignItems="center">
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Mars Swap home page"><img src="https://i.ibb.co/Hg2hktN/nav-title-light.png"></img>
+        <StyledLink as="a" href={href} aria-label="Mars Swap home page">
+          {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink href={href} as={linkComponent} aria-label="Mars Swap home page"><img src="https://i.ibb.co/Hg2hktN/nav-title-light.png" />
+        <StyledLink href={href} as={linkComponent} aria-label="Mars Swap home page">
+          {innerLogo}
         </StyledLink>
       )}
     </Flex>
