@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import styled, { keyframes } from "styled-components";
-import Image from '/mars-frontend/apps/web/public/images/nav-title-light.png';
 import Flex from "../../../components/Box/Flex";
 import { LogoIcon, LogoWithTextIcon } from "../../../components/Svg";
 import { MenuContext } from "../context";
@@ -55,10 +54,10 @@ const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
   return (
     <Flex alignItems="center">
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Mars Swap home page"><Image src="/mars-frontend/apps/web/public/images/nav-title-dark.png" />
+        <StyledLink as="a" href={href} aria-label="Mars Swap home page"><img src="https://i.ibb.co/Hg2hktN/nav-title-light.png"></img>
         </StyledLink>
       ) : (
-        <StyledLink href={href} as={linkComponent} aria-label="Mars Swap home page"><Image src="/mars-frontend/apps/web/public/images/nav-title-dark.png" />
+        <StyledLink href={href} as={linkComponent} aria-label="Mars Swap home page"><img src="https://i.ibb.co/Hg2hktN/nav-title-light.png" />
         </StyledLink>
       )}
     </Flex>
