@@ -26,7 +26,7 @@ export default {
   component: Menu,
   argTypes: {
     activeItem: {
-      options: ["Trade", "Earn", "Win"],
+      options: ["Swap", "Revenue", "Competitions"],
       control: { type: "select" },
     },
   },
