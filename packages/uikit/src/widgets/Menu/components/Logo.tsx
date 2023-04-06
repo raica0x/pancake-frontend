@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import styled, { keyframes } from "styled-components";
-import Image from '/mars-frontend/apps/web/public/images/nav-title-dark.png';
 import Image from '/mars-frontend/apps/web/public/images/nav-title-light.png';
 import Flex from "../../../components/Box/Flex";
 import { LogoIcon, LogoWithTextIcon } from "../../../components/Svg";
