@@ -107,13 +107,13 @@ const Footer = () => {
           {t('Start in seconds.')}
         </Heading>
         <Text textAlign="center" color="white">
-          {t('Connect your crypto wallet to start using the app in seconds.')}
+          {t('Connect your wallet and start using right away.')}
         </Text>
         <Text mb="24px" bold color="white">
           {t('No registration needed.')}
         </Text>
 
-        <Link external href="https://docs.pancakeswap.finance/">
+        <Link external href="#">
           {t('Learn how to start')}
           <OpenNewIcon color="primary" ml="4px" />
         </Link>
