@@ -13,10 +13,8 @@ import {
   StyledToolsContainer,
 } from "./styles";
 
-import { Button } from "../Button";
-import CakePrice from "../CakePrice/CakePrice";
 import LangSelector from "../LangSelector/LangSelector";
-import { ArrowForwardIcon, LogoWithTextIcon } from "../Svg";
+import { LogoWithTextIcon } from "../Svg";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import { FooterProps } from "./types";
 import { SkeletonV2 } from "../Skeleton";
@@ -28,9 +26,6 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
   currentLang,
   langs,
   setLang,
-  cakePriceUsd,
-  buyCakeLabel,
-  buyCakeLink,
   ...props
 }) => {
   const isMounted = useIsMounted();
@@ -43,9 +38,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
       justifyContent="center"
     >
       <Flex flexDirection="column" width={["100%", null, "1200px;"]}>
-        <StyledIconMobileContainer display={["block", null, "none"]}>
-          <LogoWithTextIcon width="130px" />
-        </StyledIconMobileContainer>
+        <StyledIconMobileContainer display={["block", null, "none"]} />
         <Flex
           order={[2, null, 1]}
           flexDirection={["column", null, "row"]}
@@ -99,21 +92,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
               dropdownPosition="top-right"
             />
           </Flex>
-          <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
-            <Box mr="20px">
-              <CakePrice cakePriceUsd={cakePriceUsd} color="textSubtle" />
-            </Box>
-            <Button
-              data-theme={isDark ? "dark" : "light"}
-              as="a"
-              href={buyCakeLink}
-              target="_blank"
-              scale="sm"
-              endIcon={<ArrowForwardIcon color="backgroundAlt" />}
-            >
-              {buyCakeLabel}
-            </Button>
-          </Flex>
+          <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center" />
         </StyledToolsContainer>
       </Flex>
     </StyledFooter>
