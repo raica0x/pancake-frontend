@@ -1,8 +1,8 @@
-# 🥞 Mars Swap Frontend
+# Marswap Frontend
 
 <p align="center">
-  <a href="https://pancakeswap.finance">
-      <img src="https://pancakeswap.finance/logo.png" height="128">
+  <a href="https://i.ibb.co/jyK3BH1/logo.png">
+      <img src="https://i.ibb.co/jyK3BH1/logo.png" height="128">
   </a>
 </p>
 
