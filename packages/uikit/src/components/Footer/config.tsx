@@ -33,7 +33,7 @@ export const footerLinks: FooterLinkType[] = [
     ],
   },
   {
-    label: "Help",
+    label: "Need Help?",
     items: [
       {
         label: "Customer Support",
@@ -85,7 +85,17 @@ export const socials = [
   {
     label: "Telegram",
     icon: TelegramIcon,
-    href: "https://mars-frontend-web.vercel.app/",
+    items: [
+      {
+        label: "English",
+        href: "https://mars-frontend-web.vercel.app/",
+      },
+
+      {
+        label: "Announcements",
+        href: "https://mars-frontend-web.vercel.app/",
+      },
+    ],
   },
   {
     label: "Reddit",
