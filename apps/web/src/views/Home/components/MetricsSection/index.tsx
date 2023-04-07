@@ -3,7 +3,6 @@ import { useTranslation } from '@pancakeswap/localization'
 import useTheme from 'hooks/useTheme'
 import { formatLocalisedCompactNumber } from '@pancakeswap/utils/formatBalance'
 import useSWRImmutable from 'swr/immutable'
-import Divider from 'components/Divider'
 import IconCard, { IconCardData } from '../IconCard'
 import StatCardContent from './StatCardContent'
 
@@ -35,7 +34,7 @@ const Stats = () => {
 
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column">
-      <Divider><img src="https://i.ibb.co/jyK3BH1/logo.png" alt="logo"/></Divider>
+      <img src="https://i.ibb.co/jyK3BH1/logo.png" alt="logo"/>
       <Heading textAlign="center" scale="xl">
         {t('Used by millions.')}
       </Heading>
