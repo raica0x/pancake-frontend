@@ -62,8 +62,8 @@ const Menu = (props) => {
         footerLinks={getFooterLinks}
         activeItem={activeMenuItem?.href}
         activeSubItem={activeSubMenuItem?.href}
-        buyCakeLabel={t('Buy CAKE')}
-        buyCakeLink="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+        buyCakeLabel={t('Buy Mars1')}
+        buyCakeLink="https://swap.crodex.app/#/swap?outputCurrency=0xaad00d36dbc8343c3505ba51418a43d3622d2964"
         {...props}
       />
     </>

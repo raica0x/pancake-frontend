@@ -3,7 +3,6 @@ import { languageList, useTranslation } from '@pancakeswap/localization'
 import { Menu as UIMenu, NextLinkFromReactRouter, footerLinks } from '@pancakeswap/uikit'
 import { NetworkSwitcher } from 'components/NetworkSwitcher'
 import PhishingWarningBanner from 'components/PhishingWarningBanner'
-import { useCakePrice } from 'hooks/useStablePrice'
 import orderBy from 'lodash/orderBy'
 import { useTheme } from 'next-themes'
 import { useRouter } from 'next/router'
@@ -46,8 +45,6 @@ export const Menu = ({ children }: { children: ReactNode }) => {
   const { setTheme, resolvedTheme } = useTheme()
   const [show] = usePhishingBanner()
 
-  const { data: cakePrice } = useCakePrice()
-
   const isDark = resolvedTheme === 'dark'
 
   const toggleTheme = useMemo(() => {
@@ -78,13 +75,10 @@ export const Menu = ({ children }: { children: ReactNode }) => {
       footerLinks={getFooterLinks}
       currentLang={currentLanguage.code}
       langs={languageList}
-      cakePriceUsd={cakePrice ? Number(cakePrice) : undefined}
       // @ts-ignore
       subLinks={activeMenuItem?.hideSubNav || activeSubMenuItem?.hideSubNav ? [] : activeMenuItem?.items}
       activeSubItem={activeSubMenuItem?.href}
       toggleTheme={toggleTheme}
-      buyCakeLabel={t('Buy CAKE')}
-      buyCakeLink="https://aptos.pancakeswap.finance/swap?outputCurrency=0x159df6b7689437016108a019fd5bef736bac692b6d4a1f10c941f6fbb9a74ca6::oft::CakeOFT"
     >
       {children}
     </UIMenu>
