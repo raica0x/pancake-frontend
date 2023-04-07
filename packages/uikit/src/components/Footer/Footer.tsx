@@ -14,7 +14,6 @@ import {
 } from "./styles";
 
 import LangSelector from "../LangSelector/LangSelector";
-import { LogoWithTextIcon } from "../Svg";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import { FooterProps } from "./types";
 import { SkeletonV2 } from "../Skeleton";
@@ -70,7 +69,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
             </StyledList>
           ))}
           <Box display={["none", null, "block"]}>
-            <LogoWithTextIcon width="160px" />
+          <img src="https://i.ibb.co/28PFs5y/nav-title-light.png" alt="Mars Swap Logo" />
           </Box>
         </Flex>
         <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
