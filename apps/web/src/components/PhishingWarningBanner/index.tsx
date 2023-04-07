@@ -47,7 +47,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const [, hideBanner] = usePhishingBanner()
   const { isMobile, isMd } = useMatchBreakpoints()
   const warningTextAsParts = useMemo(() => {
-    const warningText = t("always make sure you are visiting %domain% - check address always!", { domain })
+    const warningText = t("always make sure you are visiting %domain% - check URL always!", { domain })
     return warningText.split(/(https:\/\/mars-frontend-web.vercel.app)/g)
   }, [t])
   const warningTextComponent = (
