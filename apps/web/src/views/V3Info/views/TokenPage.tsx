@@ -302,7 +302,7 @@ const TokenPage: React.FC<{ address: string }> = ({ address }) => {
                   {view === ChartView.TVL ? (
                     <LineChart
                       data={formattedTvlData}
-                      color={isDark ? '#9A6AFF' : '#7A6EAA'}
+                      color={isDark ? '#f18312' : '#aa8c6e'}
                       minHeight={340}
                       value={latestValue}
                       label={valueLabel}
