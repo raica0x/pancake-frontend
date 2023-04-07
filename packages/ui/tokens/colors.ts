@@ -38,7 +38,7 @@ export const lightColors = {
   invertedContrast: '#191326',
   input: '#372F47',
   inputSecondary: '#262130',
-  primaryLight: '#ffffff',
+  primaryDark: '#ffffff',
   tertiary: '#d18918',
   text: '#F4EEFF',
   text99: '#F4EEFF99',
