@@ -40,7 +40,7 @@ const SpeechBubble = styled.div`
   }
 `
 
-const domain = 'https://mars-frontend-web.vercel.app/'
+const domain = 'https://marswap.vercel.app/'
 
 const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { t } = useTranslation()
@@ -48,7 +48,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { isMobile, isMd } = useMatchBreakpoints()
   const warningTextAsParts = useMemo(() => {
     const warningText = t("always make sure you are visiting %domain% - check URL always!", { domain })
-    return warningText.split(/(https:\/\/mars-frontend-web.vercel.app)/g)
+    return warningText.split(/(https:\/\/marswap.vercel.app)/g)
   }, [t])
   const warningTextComponent = (
     <>
