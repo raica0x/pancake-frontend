@@ -18,7 +18,7 @@ const Stats = () => {
   const users = formatLocalisedCompactNumber(addressCount)
   const tvlString = tvl ? formatLocalisedCompactNumber(tvl) : '-'
 
-  const tvlText = t('And those users are now entrusting the platform with over $%tvl% in funds.', { tvl: tvlString })
+  const tvlText = t('Trusting the process and progress and growing together to one of the biggest DEXs.', { tvl: tvlString })
   const [entrusting, inFunds] = tvlText.split(tvlString)
 
   const UsersCardData: IconCardData = {
@@ -40,10 +40,10 @@ const Stats = () => {
         {t('Used by millions.')}
       </Heading>
       <Heading textAlign="center" scale="xl" mb="32px">
-        {t('Trusted with billions.')}
+        {t('Trusted among the community.')}
       </Heading>
       <Text textAlign="center" color="textSubtle">
-        {t('PancakeSwap has the most users of any decentralized platform, ever.')}
+        {t('Mars Swap comes to thrive.')}
       </Text>
       <Flex flexWrap="wrap">
         <Text display="inline" textAlign="center" color="textSubtle" mb="20px">
@@ -54,7 +54,7 @@ const Stats = () => {
       </Flex>
 
       <Text textAlign="center" color="textSubtle" bold mb="32px">
-        {t('Will you join them?')}
+        {t('Join the path towards a better future!')}
       </Text>
 
       <Flex maxWidth="100%" flexDirection={['column', null, null, 'row']}>
@@ -67,7 +67,7 @@ const Stats = () => {
         </IconCard>
         <IconCard {...TradesCardData} mr={[null, null, null, '16px']} mb={['16px', null, null, '0']}>
           <StatCardContent
-            headingText={t('%trades% trades', { trades })}
+            headingText={t('%trades% transactions', { trades })}
             bodyText={t('made in the last 30 days')}
             highlightColor={theme.colors.primary}
           />
@@ -75,7 +75,7 @@ const Stats = () => {
         <IconCard {...StakedCardData}>
           <StatCardContent
             headingText={t('$%tvl% staked', { tvl: tvlString })}
-            bodyText={t('Total Value Locked')}
+            bodyText={t('Value of Assets')}
             highlightColor={theme.colors.failure}
           />
         </IconCard>
