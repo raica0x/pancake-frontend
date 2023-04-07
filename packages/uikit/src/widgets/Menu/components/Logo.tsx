@@ -45,7 +45,7 @@ const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
   const { linkComponent } = useContext(MenuContext);
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
-<img src="https://i.ibb.co/D4QZf4s/nav-title-light.png" alt="Mars Swap Logo" />
+<img src="https://i.ibb.co/bFnG1mf/nav-title-light.png" alt="Mars Swap Logo" />
   );
 
   return (
