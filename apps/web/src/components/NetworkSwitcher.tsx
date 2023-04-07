@@ -28,7 +28,7 @@ import { ChainLogo } from './Logo/ChainLogo'
 
 const AptosChain = {
   id: 1,
-  name: 'Aptos',
+  name: 'Shibarium',
 }
 
 const NetworkSelect = ({ switchNetwork, chainId }) => {
