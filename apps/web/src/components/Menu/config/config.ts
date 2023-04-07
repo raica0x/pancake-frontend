@@ -43,37 +43,22 @@ const config: (
 ) => ConfigMenuItemsType[] = (t, isDark, languageCode, chainId) =>
   [
     {
-      label: t('Trade'),
+      label: t('Exchange'),
       icon: SwapIcon,
       fillIcon: SwapFillIcon,
       href: '/swap',
       showItemsOnMobile: false,
       items: [
         {
-          label: t('Swap'),
+          label: t('Token Swap'),
           href: '/swap',
         },
         {
-          label: t('Liquidity'),
+          label: t('Manage Liquidity'),
           href: '/liquidity',
         },
         {
-          label: t('Perpetual'),
-          href: getPerpetualUrl({
-            chainId,
-            languageCode,
-            isDark,
-          }),
-          confirmModalId: 'usCitizenConfirmModal',
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
-        {
-          label: t('Bridge'),
-          href: 'https://bridge.pancakeswap.finance/',
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
-        {
-          label: `${t('Limit')} (V2)`,
+          label: `${t('Limit Orders')} (V2)`,
           href: '/limit-orders',
           supportChainIds: SUPPORT_ONLY_BSC,
           image: '/images/decorations/3d-coin.png',
@@ -81,14 +66,14 @@ const config: (
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
-      label: t('Earn'),
+      label: t('Revenue'),
       href: '/farms',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',
       items: [
         {
-          label: t('Farms'),
+          label: t('LP Farming'),
           href: '/farms',
         },
         {
@@ -99,7 +84,7 @@ const config: (
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
-      label: t('Win'),
+      label: t('Competitions'),
       href: '/prediction',
       icon: TrophyIcon,
       fillIcon: TrophyFillIcon,
@@ -112,24 +97,14 @@ const config: (
           hideSubNav: true,
         },
         {
-          label: t('Prediction (BETA)'),
-          href: '/prediction',
-          image: '/images/decorations/prediction.png',
-        },
-        {
           label: t('Lottery'),
           href: '/lottery',
-          image: '/images/decorations/lottery.png',
-        },
-        {
-          label: t('Pottery (BETA)'),
-          href: '/pottery',
           image: '/images/decorations/lottery.png',
         },
       ],
     },
     {
-      label: t('NFT'),
+      label: t('NFTs'),
       href: `${nftsBaseUrl}`,
       icon: NftIcon,
       fillIcon: NftFillIcon,
@@ -137,7 +112,7 @@ const config: (
       image: '/images/decorations/nft.png',
       items: [
         {
-          label: t('Overview'),
+          label: t('Explore'),
           href: `${nftsBaseUrl}`,
         },
         {
@@ -145,7 +120,7 @@ const config: (
           href: `${nftsBaseUrl}/collections`,
         },
         {
-          label: t('Activity'),
+          label: t('NFT Activity'),
           href: `${nftsBaseUrl}/activity`,
         },
       ],
@@ -157,45 +132,18 @@ const config: (
       hideSubNav: true,
       items: [
         {
-          label: t('Info'),
+          label: t('Information'),
           href: '/info',
         },
         {
-          label: t('IFO'),
-          href: '/ifo',
-          supportChainIds: SUPPORT_ONLY_BSC,
-          image: '/images/ifos/ifo-bunny.png',
-        },
-        {
-          label: t('Affiliate Program'),
-          href: '/affiliates-program',
-        },
-        {
-          label: t('Voting'),
-          href: '/voting',
-          supportChainIds: SUPPORT_ONLY_BSC,
-          image: '/images/voting/voting-bunny.png',
-        },
-        {
           type: DropdownMenuItemType.DIVIDER,
         },
         {
-          label: t('Leaderboard'),
-          href: '/teams',
-          supportChainIds: SUPPORT_ONLY_BSC,
-          image: '/images/decorations/leaderboard.png',
-        },
-        {
           type: DropdownMenuItemType.DIVIDER,
-        },
-        {
-          label: t('Blog'),
-          href: 'https://blog.pancakeswap.finance',
-          type: DropdownMenuItemType.EXTERNAL_LINK,
         },
         {
           label: t('Docs'),
-          href: 'https://docs.pancakeswap.finance',
+          href: 'https://mars-frontend-web.vercel.app/',
           type: DropdownMenuItemType.EXTERNAL_LINK,
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
