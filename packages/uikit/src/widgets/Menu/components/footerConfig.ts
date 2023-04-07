@@ -21,7 +21,7 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
     ],
   },
   {
-    label: t("Help"),
+    label: t("Need Help?"),
     items: [
       {
         label: t("Customer Support"),
@@ -38,7 +38,7 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
     ],
   },
   {
-    label: t("Developers"),
+    label: t("For Developers"),
     items: [
       {
         label: "Github",

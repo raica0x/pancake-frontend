@@ -7,12 +7,10 @@ import { useTranslation } from '@pancakeswap/localization'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import { ChainId } from '@pancakeswap/sdk'
 import Hero from './components/Hero'
-import { swapSectionData, earnSectionData, cakeSectionData } from './components/SalesSection/data'
+import { swapSectionData } from './components/SalesSection/data'
 import MetricsSection from './components/MetricsSection'
 import SalesSection from './components/SalesSection'
-import FarmsPoolsRow from './components/FarmsPoolsRow'
 import Footer from './components/Footer'
-import CakeDataRow from './components/CakeDataRow'
 import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } from './components/WedgeSvgs'
 import UserBanner from './components/UserBanner'
 
@@ -131,24 +129,10 @@ const Home: React.FC<React.PropsWithChildren> = () => {
             <WedgeTopRight />
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
-        <SalesSection {...earnSectionData(t)} />
-        {/* TODO: until we are enable fetch multi-chain farms */}
-        {chainId === ChainId.BSC && <FarmsPoolsRow />}
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
-        containerProps={{
-          id: 'home-3',
-        }}
-        index={2}
-        hasCurvedDivider={false}
-      >
-        <SalesSection {...cakeSectionData(t)} />
-        <CakeDataRow />
-      </PageSection>
-      <PageSection
-        innerProps={{ style: HomeSectionContainerStyles }}
-        background="linear-gradient(180deg, #d99645 0%, #996715 100%)"
+        background="linear-gradient(180deg, #d99645 0%, #000000 100%)"
         index={2}
         hasCurvedDivider={false}
       >
