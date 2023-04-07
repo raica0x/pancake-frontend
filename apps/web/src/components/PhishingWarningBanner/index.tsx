@@ -9,11 +9,11 @@ const Container = styled(Flex)`
   height: 100%;
   padding: 12px;
   align-items: center;
-  background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)),
-    linear-gradient(180deg, #8051d6 0%, #492286 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #ffb237 100%),
+  linear-gradient(180deg, #ffffff 0%, #ffb237 100%);
   ${({ theme }) => theme.mediaQueries.md} {
     padding: 0px;
-    background: linear-gradient(180deg, #8051d6 0%, #492286 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #ffb237 100%);
   }
 `
 
@@ -40,20 +40,20 @@ const SpeechBubble = styled.div`
   }
 `
 
-const domain = 'https://pancakeswap.finance'
+const domain = 'https://mars-frontend-web.vercel.app/'
 
 const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { t } = useTranslation()
   const [, hideBanner] = usePhishingBanner()
   const { isMobile, isMd } = useMatchBreakpoints()
   const warningTextAsParts = useMemo(() => {
-    const warningText = t("please make sure you're visiting %domain% - check the URL carefully.", { domain })
-    return warningText.split(/(https:\/\/pancakeswap.finance)/g)
+    const warningText = t("always make sure you are visiting %domain% - check address always!", { domain })
+    return warningText.split(/(https:\/\/mars-frontend-web.vercel.app)/g)
   }, [t])
   const warningTextComponent = (
     <>
       <Text as="span" color="warning" small bold textTransform="uppercase">
-        {t('Phishing warning: ')}
+        {t('!!domain check!!: ')}
       </Text>
       {warningTextAsParts.map((text, i) => (
         <Text
@@ -82,11 +82,11 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
         <>
           <InnerContainer>
             <img
-              src="/images/decorations/phishing-warning-bunny.webp"
+              src="https://i.ibb.co/jyK3BH1/logo.png"
               alt="phishing-warning"
               width="92px"
               onError={(e) => {
-                const fallbackSrc = '/images/decorations/phishing-warning-bunny.png'
+                const fallbackSrc = 'https://i.ibb.co/jyK3BH1/logo.png'
                 if (!e.currentTarget.src.endsWith(fallbackSrc)) {
                   // eslint-disable-next-line no-param-reassign
                   e.currentTarget.src = fallbackSrc
