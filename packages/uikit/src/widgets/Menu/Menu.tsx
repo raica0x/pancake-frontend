@@ -148,9 +148,6 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
               </Flex>
               <Flex alignItems="center" height="100%">
                 <Box mt="4px">
-                toggleTheme={toggleTheme}
-                </Box>
-                <Box mt="4px">
                   <LangSelector
                     currentLang={currentLang}
                     langs={langs}
@@ -196,7 +193,10 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
         langs={langs}
         setLang={setLang}
         currentLang={currentLang}
-        mb={[`${MOBILE_MENU_HEIGHT}px`, null, "0px"]} buyCakeLabel="" buyCakeLink=""/>
+        mb={[`${MOBILE_MENU_HEIGHT}px`, null, "0px"]}
+        buyCakeLabel=""
+        buyCakeLink=""
+      />
       <AtomBox display={{ xs: "block", md: "none" }}>
         <BottomNav items={links} activeItem={activeItem} activeSubItem={activeSubItem} />
       </AtomBox>

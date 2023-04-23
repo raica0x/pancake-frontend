@@ -69,7 +69,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
             </StyledList>
           ))}
           <Box display={["none", null, "block"]}>
-          <img src="https://i.ibb.co/28PFs5y/nav-title-light.png" alt="Mars Swap Logo" />
+            <img src="https://i.ibb.co/28PFs5y/nav-title-light.png" alt="Mars Swap Logo" />
           </Box>
         </Flex>
         <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
@@ -80,9 +80,6 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
           justifyContent="space-between"
         >
           <Flex order={[2, null, 1]} alignItems="center">
-            <SkeletonV2 variant="round" width="56px" height="32px" isDataReady={isMounted}>
-              <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
-            </SkeletonV2>
             <LangSelector
               currentLang={currentLang}
               langs={langs}

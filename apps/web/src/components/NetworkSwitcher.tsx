@@ -26,11 +26,6 @@ import Image from 'next/image'
 
 import { ChainLogo } from './Logo/ChainLogo'
 
-const AptosChain = {
-  id: 1,
-  name: 'Shibarium',
-}
-
 const NetworkSelect = ({ switchNetwork, chainId }) => {
   const { t } = useTranslation()
 
@@ -54,24 +49,6 @@ const NetworkSelect = ({ switchNetwork, chainId }) => {
             </Text>
           </UserMenuItem>
         ))}
-      <UserMenuItem
-        key={`aptos-${AptosChain.id}`}
-        style={{ justifyContent: 'flex-start' }}
-        as="a"
-        target="_blank"
-        href="https://mars-frontend-web.vercel.app/"
-      >
-        <Image
-          src="https://i.ibb.co/jyK3BH1/logo.png"
-          width={24}
-          height={24}
-          unoptimized
-          alt={`chain-aptos-${AptosChain.id}`}
-        />{' '}
-        <Text color="text" pl="12px">
-          {AptosChain.name}
-        </Text>
-      </UserMenuItem>
     </>
   )
 }

@@ -15,11 +15,6 @@ const Menu = () => {
         <Logo href="/" />
       </Flex>
       <Flex alignItems="center">
-        <NoSSR>
-          <Box mr="16px">
-            <ThemeSwitcher isDark={theme.isDark} toggleTheme={() => setTheme(theme.isDark ? 'light' : 'dark')} />
-          </Box>
-        </NoSSR>
         <LangSelector
           buttonScale="xs"
           color="textSubtle"

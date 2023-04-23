@@ -52,7 +52,6 @@ const Menu = (props) => {
         }
         banner={showPhishingWarningBanner && typeof window !== 'undefined' && <PhishingWarningBanner />}
         isDark={isDark}
-        toggleTheme={toggleTheme}
         currentLang={currentLanguage.code}
         langs={languageList}
         setLang={setLanguage}

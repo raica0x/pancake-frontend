@@ -194,7 +194,6 @@ export const NotConnected: React.FC<React.PropsWithChildren> = () => {
     <BrowserRouter>
       <Menu
         isDark={false}
-        toggleTheme={noop}
         langs={langs}
         setLang={noop}
         currentLang="EN"
@@ -227,7 +226,6 @@ export const WithoutConnectButton: React.FC<React.PropsWithChildren> = () => {
     <BrowserRouter>
       <Menu
         isDark={false}
-        toggleTheme={noop}
         langs={langs}
         setLang={noop}
         currentLang="EN"
@@ -252,7 +250,6 @@ export const WithSubmenuSelected: React.FC<React.PropsWithChildren> = () => {
     <MemoryRouter initialEntries={["/teams"]}>
       <Menu
         isDark={false}
-        toggleTheme={noop}
         langs={langs}
         setLang={noop}
         currentLang="EN"
